@@ -64,3 +64,135 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+:root{
+	--header-text-color: #000000;
+	--paragraph-text-color: #1b1b1b;
+}
+
+body{
+	margin: 5vh auto;
+	max-width: 75vw;
+}
+body h1{
+	color: var(--header-text-color);
+}
+body p{
+	color: var(--paragraph-text-color);
+	line-height: 1.25em;
+}
+	
+nav{
+	display: grid;
+	grid-template-columns: 1fr max-content;
+	height: 50px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+nav ul{
+	align-self: center;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 5vw;
+	color: rgba(181, 182, 183, 100);
+	cursor: pointer;
+}
+nav ul li:hover{
+	color: var(--paragraph-text-color);
+
+}
+.logo{
+	width:250px;
+	align-self: center;
+	
+}
+#landing{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1em;
+	align-content: center;
+	color: black;
+	padding: 100px 0;
+	border-bottom: 1px solid black;
+}
+
+.landing-left{
+	align-self: center;
+	justify-self: center;
+}
+.landing-right{
+	
+	margin-left: auto;
+}
+#landing h1{
+	font-size: 6rem;
+	color: inherit;
+	text-align: center;
+	display: block;
+}
+.landing-right img{
+	width: 500px;
+
+}
+.call-to-action_btn{
+	color: black;
+	border: 1px solid black;
+	background: none;
+	padding: 5px 40px;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	font-size: 1.25rem;
+	font-weight: 300;
+	cursor: pointer;
+}
+.call-to-action_btn:hover{
+	border: 1px solid white;
+	background: black;
+	color: white;
+}
+#landing_main-content{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(3, max-content);
+	padding: 50px 0px;
+	grid-column-gap: 3rem;
+	grid-row-gap: 3rem;
+	border-bottom: 1px solid black;
+}
+
+.grid-block-1{
+	grid-column: 1/4;
+}
+.grid-block-2{
+	grid-column: 4/7;
+}
+.grid-block-3{
+	grid-column: 1/7;
+}
+.grid-block-3 img{
+	width: 100%;
+}
+.grid-block-4{
+	grid-column: 1/3;
+}
+.grid-block-5{
+	grid-column: 3/5;
+}
+.grid-block-6{
+	grid-column: 5/7;
+}
+footer{
+	padding: 50px 0px 100px 0px;;
+}
+footer li{
+	margin-bottom: 1em;
+}
+footer span{
+	max-width: max-content;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: .9rem;
+}
+/* Testing to see if Git is working properly*/
